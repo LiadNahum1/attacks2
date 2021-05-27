@@ -173,8 +173,7 @@ def correct_bytes_number_traces(traces, plaintexts, correct_key):
         key, _ = get_correct_key(traces, plaintexts, i)
         correct_bytes = check_how_many_correct_bytes(key, correct_key)
         y_number_of_correct_bytes.append(correct_bytes)
-        print(y_number_of_correct_bytes)
-
+        
     # plot graph
     plt.plot(x_traces, np.asarray(y_number_of_correct_bytes))
     plt.legend()
@@ -201,8 +200,8 @@ def main():
     key, important_times_per_byte = get_correct_key(traces, plaintexts)
     print(f'{user},{key},{difficulty}')
 
-    #print(important_times_per_byte)
-    #correct_bytes_number_traces(traces, plaintexts, '7e680f4a466e17b864e561013eeac270')
+    print(important_times_per_byte)
+    correct_bytes_number_traces(traces, plaintexts, '7e680f4a466e17b864e561013eeac270')
 
 
 if __name__ == '__main__':
