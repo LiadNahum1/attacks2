@@ -200,8 +200,8 @@ def main():
     key, important_times_per_byte = get_correct_key(traces, plaintexts)
     print(f'{user},{key},{difficulty}')
 
-    print(important_times_per_byte)
-    correct_bytes_number_traces(traces, plaintexts, '7e680f4a466e17b864e561013eeac270')
+    #print(important_times_per_byte)
+    #correct_bytes_number_traces(traces, plaintexts, '7e680f4a466e17b864e561013eeac270')
 
 
 if __name__ == '__main__':
